@@ -1,0 +1,33 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.links a {
+    display: block;
+    margin: 12px 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: #007BFF;
+    transition: 0.3s ease;
+}
+
+.links a:hover {
+    color: #0056b3;
+}
