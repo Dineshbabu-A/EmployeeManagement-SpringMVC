@@ -1,6 +1,6 @@
 # EmployeeCRUD-SpringMVC
 
-A Spring MVC web application for performing CRUD operations on Employee data using JSP, Hibernate (JPA), and MySQL.
+-A Spring MVC web application for performing CRUD operations on Employee data using JSP, Hibernate (JPA), and MySQL.
 Currently, only the Create operation is implemented. Other CRUD operations will be added soon.
 ---
 
@@ -18,7 +18,7 @@ Currently, only the Create operation is implemented. Other CRUD operations will 
 - **Java**
 - **Spring MVC** – for building the web layer (controllers and views)
 - **Hibernate (JPA)** – for ORM and database operations
-- **JSP + JSTL** – for view rendering
+- **JSP** – for view rendering
 - **MySQL** – as the database
 - **Maven** – for project build and dependency management
 - **Tomcat Server** – to deploy and run the application
