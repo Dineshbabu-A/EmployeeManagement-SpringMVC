@@ -1,4 +1,4 @@
-# EmployeeCRUD-SpringMVC
+# EmployeeManagement-SpringMVC
 
 ## 📋 Project Summary
 
