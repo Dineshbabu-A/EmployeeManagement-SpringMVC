@@ -1,0 +1,7 @@
+- Java
+- Spring MVC
+- Hibernate (JPA)
+- JSP
+- Maven
+- MySQL
+- Tomcat Server
