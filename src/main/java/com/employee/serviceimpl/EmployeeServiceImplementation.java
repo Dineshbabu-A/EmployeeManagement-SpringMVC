@@ -1,5 +1,7 @@
 package com.employee.serviceimpl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.ModelAndView;
@@ -36,6 +38,20 @@ public class EmployeeServiceImplementation implements EmployeeService{
 
 		return modelAndView;
 	}
+
+	@Override
+	public ModelAndView viewEmployee() {
+		
+		List<Employee> employees = employeeRepository.viewEmployee();
+		
+		ModelAndView modelAndView=new ModelAndView();
+		modelAndView.setViewName("displayEmployees.jsp");
+		modelAndView.addObject("employees", employees);
+		
+		return modelAndView;
+	}
+
+	
 
 
 

@@ -7,4 +7,7 @@ import com.employee.entity.Employee;
 public interface EmployeeService {
 
 	public ModelAndView addEmployee(Employee employee);
+
+	public ModelAndView viewEmployee();
+	
 }

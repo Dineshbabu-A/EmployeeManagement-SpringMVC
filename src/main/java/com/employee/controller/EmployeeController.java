@@ -35,4 +35,10 @@ public class EmployeeController {
 		
 	}
 	
+	@RequestMapping(value = "/viewEmp")
+	public ModelAndView viewEmployee() {
+		
+		return employeeService.viewEmployee();
+	}
+	
 }
