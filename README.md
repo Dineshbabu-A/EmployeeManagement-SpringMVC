@@ -10,7 +10,7 @@ Currently, only the Create operation is implemented. Other CRUD operations will 
 ## 🚀 Features
 
 - ✅ Add Employee (Create)
-- ⏳ View Employee List (Read) – Coming Soon
+- ✅ View Employee List (Read)
 - ⏳ Update Employee Details – Coming Soon
 - ⏳ Delete Employee – Coming Soon
 
