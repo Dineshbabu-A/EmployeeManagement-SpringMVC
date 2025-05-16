@@ -54,6 +54,11 @@ public class EmployeeController {
 		return employeeService.saveUpdatedEmployee(employee);
 	}
 	
-	
+	@RequestMapping(value = "/removeEmployee",method = RequestMethod.GET)
+	public ModelAndView removeByID(@RequestParam int id) {
+		
+		return employeeService.removeById(id);
+		
+	}
 	
 }

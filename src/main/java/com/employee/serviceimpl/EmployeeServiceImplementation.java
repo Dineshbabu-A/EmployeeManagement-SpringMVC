@@ -85,8 +85,16 @@ public class EmployeeServiceImplementation implements EmployeeService{
 	
 	}
 
+	@Override
+	public ModelAndView removeById(int id) {
+		
+		employeeRepository.removeById(id);
+		
+		ModelAndView modelAndView=new ModelAndView();
+		modelAndView.setViewName("viewEmp");
+		
+		return modelAndView;
 	
-
-
+	}
 
 }

@@ -13,5 +13,7 @@ public interface EmployeeService {
 	public ModelAndView fetchById(int employeeId);
 
 	public ModelAndView saveUpdatedEmployee(Employee employee);
+
+	public ModelAndView removeById(int id);
 	
 }

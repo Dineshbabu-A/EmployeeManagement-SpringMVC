@@ -82,4 +82,20 @@ public class EmployeeRepository {
 		
 		
 	}
+
+	public void removeById(int employeeId) {
+		
+		EntityManager entityManager= EmployeeRepository.entityManager();
+		EntityTransaction transaction = entityManager.getTransaction();
+		
+		transaction.begin();
+		
+		Employee employee = entityManager.find(Employee.class, employeeId);	
+		
+		entityManager.remove(employee);
+		
+		transaction.commit();
+		entityManager.close();
+		
+	}
 }
