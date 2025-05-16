@@ -11,8 +11,8 @@ Currently, only the Create operation is implemented. Other CRUD operations will 
 
 - ✅ Add Employee (Create)
 - ✅ View Employee List (Read)
-- ⏳ Update Employee Details – Coming Soon
-- ⏳ Delete Employee – Coming Soon
+- ✅ Update Employee Details 
+- ✅ Delete Employee
 
 ---
 
