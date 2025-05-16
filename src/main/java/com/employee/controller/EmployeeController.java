@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.employee.entity.Employee;
@@ -40,5 +41,19 @@ public class EmployeeController {
 		
 		return employeeService.viewEmployee();
 	}
+	
+	@RequestMapping(value = "/editEmployee",method = RequestMethod.GET)
+	public ModelAndView editByID(@RequestParam int id) {
+		
+		return employeeService.fetchById(id);
+		
+	}
+	
+	@RequestMapping(value = "/saveUpdatedEmployee",method = RequestMethod.POST)
+	public ModelAndView saveUpdatedEmployee(Employee employee) {
+		return employeeService.saveUpdatedEmployee(employee);
+	}
+	
+	
 	
 }

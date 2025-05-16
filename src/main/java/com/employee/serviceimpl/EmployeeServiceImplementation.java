@@ -51,6 +51,40 @@ public class EmployeeServiceImplementation implements EmployeeService{
 		return modelAndView;
 	}
 
+	@Override
+	public ModelAndView fetchById(int employeeId) {
+		
+		Employee employee = employeeRepository.fetchById(employeeId);
+		
+		ModelAndView modelAndView=new ModelAndView();
+		modelAndView.setViewName("saveUpdatedEmployee.jsp");
+		modelAndView.addObject("employee", employee);
+		
+		return modelAndView;
+	}
+
+	@Override
+	public ModelAndView saveUpdatedEmployee(Employee employee) {
+		
+		int age = EmployeeUtility.calculateAge(employee.getDob());
+
+		employee.setAge(age);
+
+		if(employee.getisActive()) {
+			employee.setStatus("Active");
+		}else {
+			employee.setStatus("Not Active");
+		}
+
+		Employee employees=employeeRepository.saveUpdatedEmployee(employee);
+		
+		ModelAndView modelAndView=new ModelAndView();
+		modelAndView.setViewName("viewEmp");
+		
+		return modelAndView;
+	
+	}
+
 	
 
 

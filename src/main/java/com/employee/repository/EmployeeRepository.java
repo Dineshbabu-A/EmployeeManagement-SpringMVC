@@ -51,4 +51,35 @@ public class EmployeeRepository {
 		return list;
 		
 	}
+
+	public Employee fetchById(int employeeId) {
+		
+		EntityManager entityManager = EmployeeRepository.entityManager();
+		EntityTransaction transaction = entityManager.getTransaction();
+		
+		transaction.begin();
+		
+		Employee employee = entityManager.find(Employee.class, employeeId);
+		transaction.commit();
+		entityManager.close();
+		
+		return employee;
+		
+	}
+
+	public Employee saveUpdatedEmployee(Employee employee) {
+		
+		EntityManager entityManager= EmployeeRepository.entityManager();
+		EntityTransaction transaction = entityManager.getTransaction();
+		
+		transaction.begin();
+		
+		entityManager.merge(employee);
+		
+		transaction.commit();
+		entityManager.close();
+		return employee;
+		
+		
+	}
 }

@@ -14,8 +14,6 @@
         <div class="links">
             <a href="viewEmp">Employee Details</a>
             <a href="addEmployee.jsp">Add Employee</a>
-            <a href="updateEmpForm">Update Employee</a>
-            <a href="deleteEmpForm">Delete Employee</a>
         </div>
     </div>
 </body>

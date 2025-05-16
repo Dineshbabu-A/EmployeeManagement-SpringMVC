@@ -25,6 +25,8 @@
 			<th>Age</th>
 			<th>Salary</th>
 			<th>Status</th>
+			<th>Edit</th>
+			<th>Remove</th>
 			
 		</tr>
 	
@@ -39,13 +41,15 @@
 			<td><%=employee.getAge() %> </td>
 			<td><%=employee.getSalary() %> </td>
 			<td><%=employee.getStatus() %> </td>
+			<td><a href="editEmployee?id=<%=employee.getId()%>">Edit</a></td>
+			<td><a href="removeEmployee?id=<%=employee.getId()%>">Remove</a></td>
 		</tr>
 		<% } %>
 	
 	</tbody>
 	
 </table>
-<a href="index.jsp">Click Here to retun Home</a>
+<a href="index.jsp">Click Here to return Home</a>
 </div>
 
 </body>

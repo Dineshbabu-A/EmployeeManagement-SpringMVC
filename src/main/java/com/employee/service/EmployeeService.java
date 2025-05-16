@@ -9,5 +9,9 @@ public interface EmployeeService {
 	public ModelAndView addEmployee(Employee employee);
 
 	public ModelAndView viewEmployee();
+
+	public ModelAndView fetchById(int employeeId);
+
+	public ModelAndView saveUpdatedEmployee(Employee employee);
 	
 }
