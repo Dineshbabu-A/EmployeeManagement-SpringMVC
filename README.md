@@ -3,8 +3,6 @@
 ## 📋 Project Summary
 
 A Spring MVC web application for performing CRUD operations on Employee data using JSP, Hibernate (JPA), and MySQL.  
-Currently, only the Create operation is implemented. Other CRUD operations will be added soon.
-
 ---
 
 ## 🚀 Features
